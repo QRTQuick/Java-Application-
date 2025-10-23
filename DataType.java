@@ -10,5 +10,6 @@ public class DataType{
 		}
 }
 
-//git add .
+//git add -A
+//git commit -m "data type"
 //git push 
