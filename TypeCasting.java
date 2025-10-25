@@ -12,5 +12,5 @@ public class TypeCasting{
 		}
 }
 
-// write down all the 57 eyword and some definitins in one sentense be side it
+// write down all the 57 keyword and some definitins in one sentense be side it
 // save it in a msdocx then push the code 
