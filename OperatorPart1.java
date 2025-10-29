@@ -1,31 +1,39 @@
-public class OperatorPart1{
-	public static void main(String[] argrs){
-		//assingment operators are used to assign variable eg equal sign "="
-		
-		//compund assingment operators shorthand way to update variables eg below
-		int num = 50;
-		num += 8;
-		System.out.println(num);
-		
-		num -= 7;
-		System.out.println(num);
-		
-		num *= 10;
-		System.out.println(num);
-		
-		num /= 5;
-		System.out.println(num);
-		
-		num %= 3;
-		System.out.println(num);
-		
-		
-		// aritimetic operators
-		
-		int num1 = 10;
-		int num2 = 4;
-		int sum = num1 + num2;
-		
-		System.out.printf("the sum of %d and %d is %d",num1,num2,sum);
-	}
+public class OperatorPart1 {
+    public static void main(String[] args) {
+        // Arithmetic operators
+        int num1 = 10;
+        int num2 = 4;
+        String name = "Martins";
+
+        int sum = num1 + num2;
+        int product = num1 * num2;
+        int minus = num1 - num2;
+        double divide = (double) num1 / num2;
+        int modulos = num1 % num2;
+
+        System.out.printf("Sum is %d%n", sum);
+        System.out.printf("Product is %d%n", product);
+        System.out.printf("Difference between num1 and num2 is %d%n", minus);
+        System.out.println(name + sum);
+        System.out.printf("Division result is %.2f%n", divide);
+        System.out.printf("Modulus is %d%n", modulos);
+
+        // Relational operators
+        int firstNum = 12;
+        int secondNum = 15;
+
+        boolean isGreater = firstNum > secondNum;
+        boolean isLesser = firstNum < secondNum;
+        boolean isGreaterThanOrEqualTo = firstNum >= secondNum;
+        boolean isLessThanOrEqualTo = firstNum <= secondNum;
+        boolean isNotEqualTo = firstNum != secondNum;
+        boolean isEqualTo = firstNum == secondNum;
+
+        System.out.printf("Is firstNum > secondNum? %b%n", isGreater);
+        System.out.printf("Is firstNum < secondNum? %b%n", isLesser);
+        System.out.printf("Is firstNum >= secondNum? %b%n", isGreaterThanOrEqualTo);
+        System.out.printf("Is firstNum <= secondNum? %b%n", isLessThanOrEqualTo);
+        System.out.printf("Is firstNum != secondNum? %b%n", isNotEqualTo);
+        System.out.printf("Is firstNum == secondNum? %b%n", isEqualTo);
+    }
 }
