@@ -12,4 +12,4 @@ public class DataType{
 
 //git add -A
 //git commit -m "data type"
-//git push 
+//git push  
