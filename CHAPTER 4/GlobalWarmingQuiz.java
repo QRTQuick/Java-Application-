@@ -1,9 +1,10 @@
-import java.util.Scanner;
+import java.util.Scanner;  // Import Scanner class for user input
 
-public class GlobalWarmingQuiz{
-    public static void main(String[] args){
-        Scanner input = new Scanner(System.in);
+public class GlobalWarmingQuiz {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);  // Create Scanner object for reading user answers
         
+        // Array of quiz questions
         String[] questions = {
             "What is the primary greenhouse gas responsible for recent global warming?",
             "Which of the following is NOT a proven consequence of global warming?",
@@ -12,6 +13,7 @@ public class GlobalWarmingQuiz{
             "What is the main cause of rising sea levels?"
         };
         
+        // 2D array containing multiple-choice options for each question
         String[][] options = {
             {"1) Carbon dioxide", "2) Methane", "3) Water vapor", "4) Nitrogen"},
             {"1) Rising sea levels", "2) More frequent hurricanes", "3) Increased volcanic activity", "4) Melting glaciers"},
@@ -20,27 +22,35 @@ public class GlobalWarmingQuiz{
             {"1) Thermal expansion of water", "2) Melting land ice", "3) Both 1 and 2", "4) Increased rainfall"}
         };
         
+        // Array holding correct answers (corresponding to the options above)
         int[] answers = {1, 3, 4, 4, 3};
         
-        int score = 0;
+        int score = 0;  // Variable to store the number of correct answers
         
         System.out.println("Global Warming Facts Quiz\n");
         
+        // Loop through all questions
         for (int i = 0; i < questions.length; i++) {
-            System.out.println((i + 1) + ". " + questions[i]);
+            System.out.println((i + 1) + ". " + questions[i]);  // Display question number and text
+            
+            // Display all answer options for the current question
             for (String option : options[i]) {
                 System.out.println("   " + option);
             }
-            System.out.print("Your answer (1-4): ");
-            int userAnswer = input.nextInt();
             
+            System.out.print("Your answer (1-4): ");
+            int userAnswer = input.nextInt();  // Get user's selected option
+            
+            // Check if user’s answer matches the correct one
             if (userAnswer == answers[i]) {
-                score++;
+                score++;  // Increase score for each correct answer
             }
         }
         
+        // Display the final score
         System.out.println("\nYour score: " + score + "/5");
         
+        // Display feedback message based on score
         if (score == 5) {
             System.out.println("Excellent!");
         } else if (score == 4) {
