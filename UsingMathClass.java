@@ -9,7 +9,7 @@ public class UsingMathClass{
 		int num1 = input.nextInt();
 		int num2 = input.nextInt();
 		
-		System.out.println("absolute"+Math.abs(num1));
+		System.out.println(Math.abs(num1));
 		System.out.println(Math.abs(num2));
 		System.out.println(Math.max(num1,num2));
 		System.out.println(Math.min(num1,num2));
