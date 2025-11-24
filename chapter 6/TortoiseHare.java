@@ -4,7 +4,7 @@ import java.util.Random;
  * Simulates the classic race between the Tortoise and the Hare using 
  * probability-based movement rules.
  */
-public class TortoiseHareRace {
+public class TortoiseHare {
 
     private static final int RACE_LENGTH = 70;
     private static final int START_POSITION = 1;
