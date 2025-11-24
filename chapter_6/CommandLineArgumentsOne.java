@@ -1,4 +1,4 @@
-public class CommandLineArguments{
+public class CommandLineArgumentsOne{
 	
 	public static void main(String[] args){
 		int[] arrays;
